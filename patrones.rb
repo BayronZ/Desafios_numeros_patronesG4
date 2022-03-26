@@ -86,8 +86,8 @@ def letra_z (n)
         end
 
         print "*\s"
-        "Ciclo espacios finales"
 
+        #ciclo espacios finales"
         (fin-4).times do
             print " \s"
         end
@@ -107,6 +107,30 @@ def letra_z (n)
 end
 #Fin metodo letra z
 
+#Inicio metodo letra X
+
+# 10001 i == 0 j == 0 || i == 0 j == 4
+# 01010 i == 1 j == 1 || i == 1 j == 3
+# 00100 i == 2 j == 2 || i == 2 j == 2
+# 01010 i == 3 j == 3 || i == 3 j == 1
+# 10001 i == 4 j == 4 || i == 4 j == 0
+
+def letra_x (n)
+    n.times do |i|
+        n.times do |j|
+            if j==i || j == n-1-i
+                print "*"
+            else
+                print "  "
+            end
+        end
+        print "\n"
+    end
+
+end
+#Fin metodo letra X
+
 letra_o(num)
 letra_i(num)
 letra_z(num)
+letra_x(num)
