@@ -176,8 +176,45 @@ def numero_cero(n)
 
 end
 
-
 #Fin metodo numero cero
+
+#Inicio metodo arbol de navidad
+
+#    *
+#   * *
+#  * * *
+# * * * *
+#    *
+#    *
+#  * * *
+
+#00100 i == 0 j == 3
+#01010 i == 1 j == 1 || i == 1 j == 3 
+#10101 i == 2 j == 0 || i == 2 j == 2 || i == 2 j == 4 
+#11111
+#
+#
+
+
+
+
+def navidad(n)
+    espacio = n
+    n.times do |i|
+        (i).times do
+            (espacio-1).times do
+                print " "
+            end
+            espacio -=1
+            print " * "
+           
+        end
+        print "\n"
+
+    end
+end
+#Fin metodo arbol de navidad
+
 
 
 
@@ -186,3 +223,4 @@ letra_i(num)
 letra_z(num)
 letra_x(num)
 numero_cero(num)
+navidad(num)
