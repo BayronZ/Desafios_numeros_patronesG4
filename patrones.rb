@@ -126,11 +126,63 @@ def letra_x (n)
         end
         print "\n"
     end
+    print "\n"
+    print "\n"
 
 end
 #Fin metodo letra X
+
+#Inicio metodo numero cero
+#***** 
+#**  *
+#* * *
+#*  **
+#*****
+
+#11111 
+#11001 i == 2 j== 2
+#10101 i == 3 j == 3
+#10011 1 == 4 j == 4
+#11111
+
+def numero_cero(n)
+
+    #Linea superior
+    n.times do
+        print "*\s"
+    end
+    print "\n"
+
+    #Relleno
+    (n-2).times do |i|
+        print "*\s"
+        (n-2).times do |j|
+            if j == i
+                print "*\s"
+            else
+                print "  "
+            end
+        end
+        print "*"
+        print "\n"
+    end
+
+    #Lineas finales
+    n.times do
+        print "*\s"
+    end
+    print "\n"
+    print "\n"
+
+end
+
+
+#Fin metodo numero cero
+
+
 
 letra_o(num)
 letra_i(num)
 letra_z(num)
 letra_x(num)
+numero_cero(num)
